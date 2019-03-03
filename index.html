@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystals Collector</title>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+  <div class="outerContainer">
+    <h1>Crystals Collector</h1>
+    <div class="innerContainer">
+      <div class="rulesDiv">
+        <h3>Rules:</h3>
+        <p>
+          <ol class="rulesList">
+            <li>You will be given a random number at the start of the game.</li>
+            <li>There are four crystals. By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+            <li>You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.</li>
+            <li>The value of each crystal is hidden from you until you click on it.</li>
+            <li>Each time the game starts, the game will change the values of each crystal.</li>
+          </ol>
+        </p>
+      </div>
+      <div class="gameDiv">
+        <h3>Welcome to the Game!</h3>
+        <div class="gameVars">
+          <div class="randNumDiv">
+            Random #: <br>
+            <div id="randNum">0</div>
+          </div>
+          <div class="scoreDiv">
+            Your Score: <br>
+            <div id="yourScore">0</div>
+          </div>
+          <div class="winsDiv">
+            Wins: <br>
+            <div id="wins">0</div>
+          </div>
+          <div class="lossesDiv">
+            Losses: <br>
+            <div id="losses">0</div>
+          </div>
+        </div>
+      
+        <div class="gameContent">
+          <div class="crystal1">
+            <img src="assets/images/crystal1.jpg" alt="Crystal 1" class="crystalImg"> 
+          </div>
+          <div class="crystal2">
+            <img src="assets/images/crystal2.jpg" alt="Crystal 2" class="crystalImg">
+          </div>
+          <div class="crystal3">
+            <img src="assets/images/crystal3.jpg" alt="Crystal 3" class="crystalImg">
+          </div>
+          <div class="crystal4">
+            <img src="assets/images/crystal4.jpg" alt="Crystal 4" class="crystalImg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="assets/javascript/game.js"></script>
+</body>
+</html>

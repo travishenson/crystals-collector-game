@@ -1,0 +1,86 @@
+/* Basic Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+html, body {
+  overscroll-behavior: none;
+  background-image: url('../images/background.png');
+  background-repeat: repeat;
+  padding: 1em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.outerContainer {
+  background-color: white;
+  border: 2px solid darkgray;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.innerContainer {
+  display: flex;
+}
+
+/* Rules CSS */
+
+.rulesDiv {
+  flex: 0 0 40%;
+  margin-right: 10px;
+}
+
+.rulesList {
+  list-style-type: upper-roman;
+  margin-left: 1em;
+  font-size: 14px;
+}
+
+.rulesList li {
+  margin: 0 0 5px 0;
+}
+
+/* Game CSS */
+
+.gameDiv {
+  flex: 0 0 60%;
+  flex-wrap: wrap;
+}
+
+.gameDiv h3 {
+  flex: 0 0 100%;
+}
+
+.gameVars {
+  display: flex;
+}
+
+.randNumDiv, .scoreDiv, .winsDiv, .lossesDiv {
+  flex: 0 0 25%;
+}
+
+.gameContent {
+  margin-top: 5em;
+  margin-left: 2em;
+  display: flex;
+}
+
+.crystal1, .crystal2, .crystal3, .crystal4 {
+  flex: 0 0 25%;
+}
+
+.crystalImg {
+  max-width: 50%;
+}
