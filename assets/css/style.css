@@ -52,6 +52,20 @@ html, body {
   margin: 0 0 5px 0;
 }
 
+.reset p {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #be0000;
+  color: white;
+  padding: 5px;
+  width: 40%;
+  border-radius: 15px;
+}
+
+.reset p:hover {
+  background-color: #8b0000;
+}
+
 /* Game CSS */
 
 .gameDiv {
@@ -83,4 +97,13 @@ html, body {
 
 .crystalImg {
   max-width: 50%;
+}
+
+.crystalScore {
+  margin: 0 auto;
+  display: none;
+}
+
+.show {
+  display: block;
 }

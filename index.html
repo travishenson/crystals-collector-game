@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="outerContainer">
@@ -19,47 +21,55 @@
         <h3>Rules:</h3>
         <p>
           <ol class="rulesList">
-            <li>You will be given a random number at the start of the game.</li>
+            <li>You will be given a random number at the start of the game as your target score.</li>
             <li>There are four crystals. By clicking on a crystal, you will add a specific amount of points to your total score.</li>
-            <li>You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.</li>
+            <li>You win the game by matching your total score to the target score; you lose the game if your total score goes above the target score.</li>
             <li>The value of each crystal is hidden from you until you click on it.</li>
             <li>Each time the game starts, the game will change the values of each crystal.</li>
           </ol>
+          <br>
+          <div class="reset">
+            <p>RESET GAME</p>
+          </div>
         </p>
       </div>
       <div class="gameDiv">
         <h3>Welcome to the Game!</h3>
         <div class="gameVars">
           <div class="randNumDiv">
-            Random #: <br>
-            <div id="randNum">0</div>
+            Target Score: <br>
+            <div id="randNum"></div>
           </div>
           <div class="scoreDiv">
             Your Score: <br>
-            <div id="yourScore">0</div>
+            <div id="yourScore"></div>
           </div>
           <div class="winsDiv">
             Wins: <br>
-            <div id="wins">0</div>
+            <div id="wins"></div>
           </div>
           <div class="lossesDiv">
             Losses: <br>
-            <div id="losses">0</div>
+            <div id="losses"></div>
           </div>
         </div>
       
         <div class="gameContent">
-          <div class="crystal1">
-            <img src="assets/images/crystal1.jpg" alt="Crystal 1" class="crystalImg"> 
+          <div>
+            <img src="assets/images/crystal1.jpg" alt="Crystal 1" class="crystalImg" id="crystal1">
+            <div id="crystalScore1" class="crystalScore"></div>
           </div>
           <div class="crystal2">
-            <img src="assets/images/crystal2.jpg" alt="Crystal 2" class="crystalImg">
+            <img src="assets/images/crystal2.jpg" alt="Crystal 2" class="crystalImg" id="crystal2">
+            <div id="crystalScore2" class="crystalScore"></div>
           </div>
           <div class="crystal3">
-            <img src="assets/images/crystal3.jpg" alt="Crystal 3" class="crystalImg">
+            <img src="assets/images/crystal3.jpg" alt="Crystal 3" class="crystalImg" id='crystal3'>
+            <div id="crystalScore3" class="crystalScore"></div>
           </div>
           <div class="crystal4">
-            <img src="assets/images/crystal4.jpg" alt="Crystal 4" class="crystalImg">
+            <img src="assets/images/crystal4.jpg" alt="Crystal 4" class="crystalImg" id='crystal4'>
+            <div id="crystalScore4" class="crystalScore"></div>
           </div>
         </div>
       </div>
