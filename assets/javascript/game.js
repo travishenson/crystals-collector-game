@@ -50,9 +50,11 @@ var newGame = function () {
 // Check score function
 var checkScore = function () {
   if (score === randNum) {
+    alert('You win!');
     wins++;
     newGame();
   } else if (score > randNum) {
+    alert('You lose.')
     losses++;
     newGame();
   };
@@ -72,7 +74,6 @@ newGame();
 
 // Add value of each crystal to score on click
 $('#crystal1').click(function () {
-  console.log('Click works');
   $('#crystalScore1').removeClass('crystalScore');
   score += crystal1;
   $('#yourScore').text(score);
@@ -80,7 +81,6 @@ $('#crystal1').click(function () {
 });
 
 $('#crystal2').click(function () {
-  console.log('Click works');
   $('#crystalScore2').removeClass('crystalScore');
   score += crystal2;
   $('#yourScore').text(score);
@@ -88,7 +88,6 @@ $('#crystal2').click(function () {
 });
 
 $('#crystal3').click(function () {
-  console.log('Click works');
   $('#crystalScore3').removeClass('crystalScore');
   score += crystal3;
   $('#yourScore').text(score);
@@ -96,7 +95,6 @@ $('#crystal3').click(function () {
 });
 
 $('#crystal4').click(function () {
-  console.log('Click works');
   $('#crystalScore4').removeClass('crystalScore');
   score += crystal4;
   $('#yourScore').text(score);
